@@ -9,7 +9,7 @@ class MainPageLocator(object):
     ADD_ITEM_LABS_BACKPACK = (By.ID, "add-to-cart-sauce-labs-backpack")
     ADD_ITEM_LABS_BIKE_LIGHT = (By.ID, "add-to-cart-sauce-labs-bike-light")
     SHOPPING_CART = (By.XPATH, "/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")
-    REMOVE_BUTTON_BACKPACK = (By.XPATH, "//*[@id='remove-sauce-labs-backpack']")
+    REMOVE_BUTTON_BACKPACK = (By.ID, "remove-sauce-labs-backpack")
     REMOVE_BUTTON_BIKE_LIGHT = (By.ID, "remove-sauce-labs-bike-light")
     CHECKOUT_BUTTON = (By.ID, "checkout")
     CHECKOUT_FIRSTNAME = (By.ID, "first-name")

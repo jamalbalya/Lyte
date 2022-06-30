@@ -14,21 +14,21 @@ class AutomationTest(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.get("https://www.saucedemo.com/")
 
-    def test_login(self):
+    def test_1_login(self):
         self.driver.implicitly_wait(30)
         mainPage = pageUI.page.MainPage(self.driver)
         mainPage.Login()
         time.sleep(3)
         print("Test Login Completed.....")
 
-    def test_choose_one_item(self):
+    def test_2_choose_one_item(self):
         mainPage = pageUI.page.MainPage(self.driver)
         mainPage.choose_one_item()
         time.sleep(3)
         print("Test Choose One Item Completed.....")
 
 
-    def test_checkout_payment(self):
+    def test_3_checkout_payment(self):
         mainPage = pageUI.page.MainPage(self.driver)
         mainPage.checkout_payment()
         time.sleep(3)
